@@ -1,0 +1,56 @@
+:root {
+  --btn-primary-color: rgba(29, 231, 130, 1);
+}
+
+body {
+  background-image: url("../dist/assets/bg.svg");
+  background-repeat: repeat;
+  position: relative;
+}
+
+.btn-home__navbar {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  gap: 10px;
+  outline: none;
+  border: none;
+}
+
+.btn-home__login {
+  background-color: var(--btn-primary-color);
+}
+
+.btn-home__register {
+  border: 1px solid var(--btn-primary-color);
+  background-color: transparent;
+  color: white;
+}
+
+.header-text {
+  color: white;
+  text-align: center;
+  font-size: 6rem;
+  margin-top: 4rem;
+}
+
+@media screen and (max-width: 767px) {
+  .header-text {
+    font-size: 3rem;
+    margin: 2rem;
+  }
+}
+
+.list-film {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 10px;
+}
+.list-film > div {
+  height: 300px;
+  width: 250px;
+  border-radius: 10px;
+  background-color: var(--btn-primary-color);
+}
