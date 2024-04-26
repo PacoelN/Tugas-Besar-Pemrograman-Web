@@ -37,6 +37,12 @@ body {
   border: 1px solid var(--btn-primary-color);
   background-color: transparent;
   color: white;
+  transition: all 100ms ease-in-out;
+}
+
+.btn-home__register:hover {
+  background-color: var(--btn-primary-color);
+  color: black;
 }
 
 .header-text {
@@ -53,7 +59,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-content: center;
   gap: 32px;
-  margin: 10px;
+  margin: 58px;
 }
 
 .list-film > img:hover {
@@ -65,13 +71,14 @@ body {
 
 .film-container {
   position: relative;
-  margin: 10px;
+  margin: 20px;
+  width: 200px;
 }
 
 .film-container img {
   display: block;
   width: 200px;
-  height: auto;
+  /* height: auto; */
   transition: filter 0.3s ease;
 }
 
@@ -161,6 +168,8 @@ footer::before {
   top: -20px;
   position: relative;
   background-color: var(--btn-primary-color);
+  padding: 0;
+  margin: 0;
 }
 
 footer {
@@ -192,8 +201,16 @@ footer {
   cursor: pointer;
 }
 
-/* Adjust the icon size and color as needed */
 .centered-form button i {
   font-size: 20px;
   color: white;
+}
+
+.centered-form > button[type="submit"] {
+  color: white;
+  width: 100px;
+  background-color: var(--btn-primary-color);
+  padding: 24px;
+  border-radius: 24px;
+  transform: translateX(-100px);
 }
