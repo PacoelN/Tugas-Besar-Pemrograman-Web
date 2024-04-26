@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,8 +17,16 @@
                 <img src="./dist/assets/brand.svg" height="20" alt="MDB Logo" loading="lazy" />
             </a>
             <div class="d-flex gap-2">
-                <button class="btn-home__navbar btn-home__login">Login</button>
-                <button class="btn-home__navbar btn-home__register">Sign Up</button>
+                <?php if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) { ?>
+                    <button class="btn-home__navbar btn-home__logout"><a href="./auth/logout.php" class="text-white">Logout</a></button>
+                <?php } else { ?>
+                    <button class="btn-home__navbar btn-home__login">
+                        <a href="./auth/login.php">Login</a>
+                    </button>
+                    <button class="btn-home__navbar btn-home__register">
+                        <a href="./auth/register.php">Sign Up</a>
+                    </button>
+                <?php } ?>
             </div>
         </div>
     </nav>

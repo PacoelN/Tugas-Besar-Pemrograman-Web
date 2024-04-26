@@ -6,87 +6,24 @@
     <header>
         <h1 class="header-text">Now Showing</h1>
         <div class="list-film">
-            <div class="film-container">
-                <a href="#">
-                    <img src="./dist/assets/image 1.png" alt="" />
-                    <div class="film-info">
-                        <p>Film elemental</p>
-                        <p>Rating 8.1/10</p>
-                        <p>50k Votes</p>
-                    </div>
-                </a>
-            </div>
-            <div class="film-container">
-                <a href="#">
-                    <img src="./dist/assets/image 1.png" alt="" />
-                    <div class="film-info">
-                        <p>Film elemental</p>
-                        <p>Rating 8.1/10</p>
-                        <p>50k Votes</p>
-                    </div>
-                </a>
-            </div>
-            <div class="film-container">
-                <a href="#">
-                    <img src="./dist/assets/image 2.png" alt="" />
-                    <div class="film-info">
-                        <p>Film Spiderman</p>
-                        <p>Rating 8.6/10</p>
-                        <p>100k Votes</p>
-                    </div>
-                </a>
-            </div>
-            <div class="film-container">
-                <a href="#">
-                    <img src="./dist/assets/image 3.png" alt="" />
-                    <div class="film-info">
-                        <p>Film Fast and Furious</p>
-                        <p>Rating 9/10</p>
-                        <p>981k Votes</p>
-                    </div>
-                </a>
-            </div>
-            <div class="film-container">
-                <a href="">
-                    <img src="./dist/assets/image 3.png" alt="" />
-                    <div class="film-info">
-                        <p>Film Fast and Furious</p>
-                        <p>Rating 9/10</p>
-                        <p>981k Votes</p>
-                    </div>
-                </a>
-            </div>
-            <div class="film-container">
-                <a href="#">
-                    <img src="./dist/assets/image 4.png" alt="" />
-                    <div class="film-info">
-                        <p>Film Fast and Furious</p>
-                        <p>Rating 9/10</p>
-                        <p>981k Votes</p>
-                    </div>
-                </a>
-            </div>
-            <div class="film-container">
-                <a href="#">
-                    <img src="./dist/assets/image 5.png" alt="" />
-                    <div class="film-info">
-                        <p>Film Fast and Furious</p>
-                        <p>Rating 9/10</p>
-                        <p>981k Votes</p>
-                    </div>
-                </a>
-            </div>
+            <?php
+            $film_count = file_get_contents('./data/film.json');
+            $films = json_decode($film_count, true);
 
-            <div class="film-container">
-                <a href="#">
-                    <img src="./dist/assets/image 6.png" alt="" />
-                    <div class="film-info">
-                        <p>Film Fast and Furious</p>
-                        <p>Rating 9/10</p>
-                        <p>981k Votes</p>
-                    </div>
-                </a>
-            </div>
+            foreach ($films as $i => $film) {
+            ?>
+                <div class="film-container">
+                    <a href="./filmData.php?id=<?php echo $i ?>">
+                        <img src="./dist/assets/image<?php echo $i + 1 ?>.jpeg" alt="" />
+                        <div class="film-info">
+                            <p><?php echo $film['title'] ?></p>
+                            <p><?php echo $film['rating'] ?>/10</p>
+                            <?php $random_num = mt_rand(1, 89) ?>
+                            <p><?php echo $random_num ?>K Votes</p>
+                        </div>
+                    </a>
+                </div>
+            <?php } ?>
         </div>
     </header>
     <form action="" class="centered-form">

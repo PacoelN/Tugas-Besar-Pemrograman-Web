@@ -6,6 +6,97 @@
     "sutradara": "Peter Sohn",
     "rating": 7.1,
     "duration": 101,
-    "genre": ["Animation", "Adventure", "Comedy"]
+    "genre": ["Animation", "Adventure", "Comedy"],
+    "image": "../dist/assets/image1.jpeg"
+  },
+  {
+    "title": "Spider-Man: Across the Spider-Verse",
+    "sinopsis": "Miles Morales returns for the next chapter of the Oscar®-winning Spider-Verse saga, an epic adventure that will transport Brooklyn's full-time, friendly neighborhood Spider-Man across the Multiverse to join forces with Gwen Stacy and a new team of Spider-People to face off with a villain more powerful than anything they have ever encountered.",
+    "release": "02 Jun 2023",
+    "sutradara": "Joaquim Dos Santos",
+    "rating": 8.6,
+    "duration": 140,
+    "genre": ["Animation", "Adventure", "Comedy"],
+    "image": "../dist/assets/image2.jpeg"
+  },
+  {
+    "title": "Fast X",
+    "sinopsis": "Dom Toretto and his family are targeted by the vengeful son of drug kingpin Hernan Reyes.",
+    "release": "19 May 2023",
+    "sutradara": "Louis Leterrier",
+    "rating": 5.8,
+    "duration": 141,
+    "genre": ["Action", "Adventure", "Crime"],
+    "image": "../dist/assets/image3.jpeg"
+  },
+  {
+    "title": "Guardian of the Galaxy Vol.3",
+    "sinopsis": "Still reeling from the loss of Gamora, Peter Quill rallies his team to defend the universe and one of their own - a mission that could mean the end of the Guardians if not successful.",
+    "release": "05 May 2023",
+    "sutradara": "James Gunn",
+    "rating": 7.9,
+    "duration": 150,
+    "genre": ["Action", "Comedy", "Adventure"],
+    "image": "../dist/assets/image4.jpeg"
+  },
+  {
+    "title": "Polis Evo 3",
+    "sinopsis": "Follows Inspector Khai, as he becomes desperate after an old grudge returns to haunt him threatening public with mysterious bombings.",
+    "release": "05 May 2023",
+    "sutradara": "Syafiq Yusof",
+    "rating": 7.1,
+    "duration": 113,
+    "genre": ["Action", "Adventure", "Comedy"],
+    "image": "../dist/assets/image5.jpeg"
+  },
+  {
+    "title": "Anwar: The Untold Story",
+    "sinopsis": "Based on the period in Malaysian Prime Minister Datuk Seri Anwar Ibrahim's life when he became Finance Minister from 1991 until he was fired from the Cabinet in 1998, which sparked a period of political uprising known as the Malaysian reformasi.",
+    "release": "11 May 2023",
+    "sutradara": "Viva Westi",
+    "rating": 4.8,
+    "duration": 108,
+    "genre": ["Biography", "Drama", "History"],
+    "image": "../dist/assets/image6.jpeg"
+  },
+  {
+    "title": "Siksa Neraka",
+    "sinopsis": "When your mouth can't speak. The sins in the world are witnesses that produce the painful torment of Hell.",
+    "release": "14 Dec 2023",
+    "sutradara": "Anggy Umbara",
+    "rating": 5.2,
+    "duration": 98,
+    "genre": ["Horror", "Thriller"],
+    "image": "../dist/assets/image7.jpeg"
+  },
+  {
+    "title": "Agak Laen",
+    "sinopsis": "An old man dies in a failing haunted house ride. The operators bury his body on site, turning it into a popular attraction.",
+    "release": "01 Feb 2024",
+    "sutradara": "Muhadkly Acho",
+    "rating": 0.0,
+    "duration": 119,
+    "genre": ["Comedy"],
+    "image": "../dist/assets/image8.jpeg"
+  },
+  {
+    "title": "Miracle in Cell No. 7",
+    "sinopsis": "A mentally ill man faces the consequences of a corrupt Indonesian politician as he is wrongly accused of murder, and all he wishes is to see his daughter again.",
+    "release": " 08 Sep 2022",
+    "sutradara": "Hanung Bramantyo",
+    "rating": 7.7,
+    "duration": 145,
+    "genre": ["Comedy", "Drama", "Family"],
+    "image": "../dist/assets/image9.jpeg"
+  },
+  {
+    "title": "KKN di Desa Penari",
+    "sinopsis": "A man known as Simpleman, got a scary story. Starting from 5 students who had to carry out KKN in a remote village, Nur (Tissa Biani), Widya (Adinda Thomas), Ayu (Aghniny Haque), Bima (Achmad Megantara), Anton (Calvin Jeremy) and Wahyu (M. Fajar Nugraga) never thought that the village they chose was not an ordinary village. Pak Prabu (Kiki Narendra) the village head warns them not to cross the boundary of the forbidden gate, a gate leading to the footprint. The mysterious place may have something to do with the figure of a beautiful dancer who began to disturb Nur and also Widya. One by one began to feel the strangeness of the village. Bima began to change his attitude. Their KKN program is a mess, it seems that the unseen inhabitants of the village don't like them. Nur finally found an astonishing fact that one of them violated the most fatal rules in the village. The terror of the mysterious dancer figure became even more frightening, they tried to ask the help of Mbah Buyut (Diding Boneng) the local shaman, but it was too late, they threatened they would not be able to return safely from the village known as the dancer's village.",
+    "release": " 30 Apr 2022",
+    "sutradara": "Awi Suryadi",
+    "rating": 5.9,
+    "duration": 130,
+    "genre": ["Horror", "Mystery", "Thriller"],
+    "image": "../dist/assets/image10.jpeg"
   }
 ]
