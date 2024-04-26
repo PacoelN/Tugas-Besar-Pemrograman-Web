@@ -17,16 +17,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($users[$username] === $password) {
             $_SESSION['username'] = $username;
             $_SESSION['logged_in'] = true;
-            header("Location: ../index.php"); // Ubah ini sesuai dengan lokasi yang Anda inginkan
-            exit();
+            header("Location: ../index.php");
+            exit;
         } else {
             $_SESSION['login_error'] = "Invalid password";
-            header("Location: login.php"); // Redirect kembali ke halaman login
-            exit();
+            header("Location: login.php");
+            exit;
         }
     } else {
         $_SESSION['login_error'] = "User not found";
-        header("Location: login.php"); // Redirect kembali ke halaman login
-        exit();
+        header("Location: login.php");
+        exit;
     }
 }
