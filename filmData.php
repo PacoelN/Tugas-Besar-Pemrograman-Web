@@ -45,12 +45,12 @@
             <div class="film-details">
                 <img src="<?php echo $film['image'] ?>" alt="<?php $film['title'] ?>">
                 <div>
-                    <p><?php echo $film['sinopsis']; ?></p>
-                    <p><?php echo $film['release']; ?></p>
-                    <p><?php echo $film['sutradara']; ?></p>
-                    <p><?php echo $film['rating']; ?></p>
-                    <p><?php echo $film['duration']; ?></p>
-                    <p><?php echo implode(", ", $film['genre']); ?></p>
+                    <p><b>Sinopsis :</b> <br><?php echo $film['sinopsis']; ?></p>
+                    <p><b>Release : </b><?php echo $film['release']; ?></p>
+                    <p><b>Directed by : </b><?php echo $film['sutradara']; ?></p>
+                    <p><b>Rating : </b><?php echo $film['rating']; ?>/10</p>
+                    <p><b>Duration : </b><?php echo $film['duration']; ?> Minute</p>
+                    <p><b><?php echo implode(", ", $film['genre']); ?></p>
                     <a href="">
                         <button class="btn-book">Book Film</button>
                     </a>
