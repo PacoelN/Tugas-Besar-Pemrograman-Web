@@ -1,9 +1,18 @@
+<?php
+$isUserLoggedIn = isset($_SESSION['username']);
+$user = $isUserLoggedIn ? $_SESSION['username'] : '';
+?>
+
 <head>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
 
 <body>
     <header>
+        <?php if ($isUserLoggedIn) {
+        ?> <h2 class="welcome-user">Welcome, <?php echo htmlspecialchars($user) ?></h2>
+        <?php }
+        ?>
         <h1 class="header-text">Now Showing</h1>
         <div class="list-film">
             <?php

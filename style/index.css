@@ -251,3 +251,19 @@ footer {
   height: auto;
   border-radius: 12px;
 }
+
+.welcome-user {
+  color: white;
+  margin: 40px;
+  font-size: 2em;
+  position: relative;
+}
+
+.welcome-user::after {
+  display: block;
+  content: "";
+  height: 4px;
+  background-color: var(--btn-primary-color);
+  width: 45%;
+  margin-top: 10px;
+}

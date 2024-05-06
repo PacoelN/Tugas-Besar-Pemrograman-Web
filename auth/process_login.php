@@ -2,10 +2,11 @@
 session_start();
 
 $users = array(
-    'john' => 'password123',
-    'jane' => 'hello456',
+    'aldi' => 'aldi123',
+    'tegar' => 'tegar123',
     'fadhil' => 'fadhil123',
-    'pascal' => 'pascal123'
+    'pascal' => 'pascal123',
+    'arnest' => 'arnest123'
 );
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
