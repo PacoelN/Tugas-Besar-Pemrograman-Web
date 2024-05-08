@@ -56,6 +56,29 @@
                     </a>
                 </div>
             </div>
+
+            <h2 style="color: white; margin:24px;">Other Films</h2>
+            <div class="list-film">
+                <?php
+                foreach ($films as $index => $other_film) {
+                    if ($index != $film_id) {
+                        $random_num = mt_rand(1, 89); // Generate random votes
+                ?>
+                        <div class="film-container">
+                            <a href="./filmData.php?id=<?php echo $index ?>">
+                                <img src="./dist/assets/image<?php echo $index + 1 ?>.jpeg" alt="" />
+                                <div class="film-info">
+                                    <p><?php echo $other_film['title'] ?></p>
+                                    <p><?php echo $other_film['rating'] ?>/10</p>
+                                    <p><?php echo $random_num ?>K Votes</p>
+                                </div>
+                            </a>
+                        </div>
+                <?php
+                    }
+                }
+                ?>
+            </div>
         <?php
         } else {
         ?>

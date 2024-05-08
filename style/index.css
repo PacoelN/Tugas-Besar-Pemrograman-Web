@@ -18,6 +18,27 @@ body {
   background-image: url("../dist/assets/bg.svg");
   background-repeat: repeat;
   position: relative;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+body:hover::-webkit-scrollbar-thumb {
+  background-color: var(--btn-primary-color);
+  border-radius: 10px;
+}
+
+body:hover::-webkit-scrollbar-thumb:hover,
+body:hover::-webkit-scrollbar-thumb:active {
+  border-radius: 10px;
+  background-color: var(--primary-weak);
 }
 
 .btn-home__navbar,
@@ -264,6 +285,6 @@ footer {
   content: "";
   height: 4px;
   background-color: var(--btn-primary-color);
-  width: 45%;
+  width: 20%;
   margin-top: 10px;
 }
